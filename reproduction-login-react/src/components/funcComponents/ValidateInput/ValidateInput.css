@@ -1,0 +1,27 @@
+.validate-input{
+    position: relative;
+    border-bottom: 2px solid rgba(255,255,255,.24);
+    margin-bottom: 30px;
+    width: 90%;
+}
+.validate-input > input{
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    background: inherit;
+    color: white;
+}
+.validate-input > input::placeholder{
+    color: white;
+    position: relative;
+    left: 28px;
+}
+.validate-input > input:focus::placeholder{
+    color: transparent;
+}
+.validate-input> img{
+    position: absolute;
+    height: 20px;
+}

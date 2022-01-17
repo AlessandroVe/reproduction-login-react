@@ -5,10 +5,39 @@
     align-items: center;
     opacity: 100%;
 }
-.boxLogin{
+.box-login{
     flex-basis: 500px;
     height: 683px;
     background: linear-gradient(180deg, #7579ff 0%, #b224ef 100%);
     margin: 15px 15px;
     border-radius: 10px;
+    padding: 55px 55px 37px;
 }
+.login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    height: 120px;
+    width: 120px;
+    font-size: 35px;
+}
+.form-logo> img{
+    transform: scaleX(-1);
+    width: 45%;
+    height: 30%;
+}
+.form-title{
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    font-weight:500;
+    padding: 34px 0 27px 0;
+}
+
