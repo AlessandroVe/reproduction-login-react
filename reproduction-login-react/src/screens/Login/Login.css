@@ -1,0 +1,14 @@
+
+
+
+.login{
+    height: 100vh ;
+    background-image: url(../../assets/images/photo_2022-01-17_11-39-25.jpg) ;
+    background-size: cover;
+    background-position-y: center;
+    opacity: 10%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
