@@ -28,6 +28,21 @@ class Login extends Component {
                         <span className="form-title">LOG IN</span>
                         <ValidateInput type="text" label="Username" inputIcon={logoUser} />
                         <ValidateInput type="password" label="Password" inputIcon={logoPassword} />
+                        <div className="form-checkbox">
+                            <input type="checkbox"></input>
+                            <label>Remember me</label>
+                        </div>
+                        <div className="form-button">
+                            <button>LOGIN
+                            </button>
+                        </div>
+                        <div className="form-forgot">
+                           <a >
+                           Forgot Password?
+                           </a>
+                        </div>
+
+
                     </form>
                 </div>
             </div>

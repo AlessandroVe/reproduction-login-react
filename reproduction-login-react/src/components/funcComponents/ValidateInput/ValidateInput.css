@@ -1,8 +1,8 @@
 .validate-input{
     position: relative;
-    border-bottom: 2px solid rgba(255,255,255,.24);
     margin-bottom: 30px;
     width: 90%;
+    border-bottom: 2px solid rgba(255,255,255,.24);
 }
 .validate-input > input{
     width: 100%;
@@ -10,9 +10,18 @@
     font-size: 16px;
     outline: none;
     border: none;
+    
     background: inherit;
     color: white;
+    transition: all 1s linear;
 }
+
+.validate-input > input::before{
+    border-bottom: 2px solid white;
+    width: 25px;
+    height: 10px;
+}
+
 .validate-input > input::placeholder{
     color: white;
     position: relative;
@@ -20,8 +29,18 @@
 }
 .validate-input > input:focus::placeholder{
     color: transparent;
+
 }
-.validate-input> img{
+
+.validate-input > img{
     position: absolute;
-    height: 20px;
+    top: 10px;
+    height: 18px;
+    filter: invert(100%);
+    transition: all .5s linear;
+
+}
+.validate-input > img{
+    top: -15px;
+
 }
