@@ -1,1 +1,7 @@
-
+.App{
+    height: 100vh;
+    background-image: linear-gradient(to right, rgba(255,255,255, 0.9) 0 100%),
+     url(../src/assets/images/photo_2022-01-17_11-39-25.jpg);
+    background-size: cover;
+    background-position-y: center;
+}

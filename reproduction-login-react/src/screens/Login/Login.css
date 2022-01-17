@@ -1,14 +1,14 @@
-
-
-
 .login{
     height: 100vh ;
-    background-image: url(../../assets/images/photo_2022-01-17_11-39-25.jpg) ;
-    background-size: cover;
-    background-position-y: center;
-    opacity: 10%;
-
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 100%;
+}
+.boxLogin{
+    flex-basis: 500px;
+    height: 683px;
+    background: linear-gradient(180deg, #7579ff 0%, #b224ef 100%);
+    margin: 15px 15px;
+    border-radius: 10px;
 }
