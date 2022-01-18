@@ -17,6 +17,9 @@ class Login extends Component {
     constructor(props) {
         super(props)
     }
+    handleClick = () => {
+        
+    }
     render() {
         return (
             <div className="login">
@@ -26,14 +29,14 @@ class Login extends Component {
                             <img src={logoForm}></img>
                         </span>
                         <span className="form-title">LOG IN</span>
-                        <ValidateInput type="text" label="Username" inputIcon={logoUser} />
-                        <ValidateInput type="password" label="Password" inputIcon={logoPassword} />
+                        <ValidateInput class="form-user" type="text" label="Username" inputIcon={logoUser} />
+                        <ValidateInput class="form-password" type="password" label="Password" inputIcon={logoPassword} />
                         <div className="form-checkbox">
-                            <input type="checkbox"></input>
-                            <label>Remember me</label>
+                            <input id="check" type="checkbox"></input>
+                            <label for="check">Remember me</label>
                         </div>
                         <div className="form-button">
-                            <button>LOGIN
+                            <button>Login
                             </button>
                         </div>
                         <div className="form-forgot">

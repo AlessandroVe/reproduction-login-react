@@ -3,10 +3,15 @@ import PropTypes from 'prop-types'
 
 
 const ValidateInput = (props) => {
+
     return (
         <div className="validate-input">
-            <img src={props.inputIcon} />
-            <input type={props.type} placeholder={props.label}></input>
+
+            <input type={props.type} placeholder={props.label} required></input>
+            <span className="input-span">
+                <img src={props.inputIcon} />
+            </span>
+
         </div>
     )
 }

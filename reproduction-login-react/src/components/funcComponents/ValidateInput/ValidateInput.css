@@ -1,8 +1,9 @@
 .validate-input{
+    border-bottom: 2px solid rgba(255,255,255,0.24);
     position: relative;
     margin-bottom: 30px;
     width: 90%;
-    border-bottom: 2px solid rgba(255,255,255,.24);
+  
 }
 .validate-input > input{
     width: 100%;
@@ -10,16 +11,42 @@
     font-size: 16px;
     outline: none;
     border: none;
-    
     background: inherit;
     color: white;
     transition: all 1s linear;
+ 
 }
 
-.validate-input > input::before{
-    border-bottom: 2px solid white;
-    width: 25px;
-    height: 10px;
+.input-span > img{
+    filter: invert(100%);
+    position: absolute;
+    display: block;
+    width: 1.075em;
+    height: 0.95em;
+    top: 15px;
+    padding-right: 2px;
+    transition: linear all 0.4s;
+}
+.input-span::after {
+    bottom: -1px;
+    position: absolute;
+    display: block;
+    content: '';
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: linear all 0.4s;
+}
+input:focus + span::after {
+   
+    transition: linear all 0.4s;
+    width: 100%;
+}
+input:focus + span > img{
+    transition: linear all 0.4s;
+    width: 1em;
+    height: 0.89;
+    top: -15px;
 }
 
 .validate-input > input::placeholder{
@@ -29,18 +56,5 @@
 }
 .validate-input > input:focus::placeholder{
     color: transparent;
-
-}
-
-.validate-input > img{
-    position: absolute;
-    top: 10px;
-    height: 18px;
-    filter: invert(100%);
-    transition: all .5s linear;
-
-}
-.validate-input > img{
-    top: -15px;
 
 }
